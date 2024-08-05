@@ -1,1 +1,34 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"flutter-rpg-93b5d","appId":"1:129266583956:android:71af217a5cf7fa0a126781","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"flutter-rpg-93b5d","configurations":{"android":"1:129266583956:android:71af217a5cf7fa0a126781","ios":"1:129266583956:ios:1fcfbc4491a09a0c126781","windows":"1:129266583956:web:20d29b8660d7f38e126781"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "flutter-rpg-93b5d",
+          "appId": "1:129266583956:android:71af217a5cf7fa0a126781",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "flutter-rpg-93b5d",
+          "configurations": {
+            "android": "1:129266583956:android:71af217a5cf7fa0a126781",
+            "ios": "1:129266583956:ios:1fcfbc4491a09a0c126781",
+            "windows": "1:129266583956:web:20d29b8660d7f38e126781"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "us-west1"
+    }
+  }
+}
