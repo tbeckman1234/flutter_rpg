@@ -7,10 +7,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -18,10 +15,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
@@ -55,10 +49,29 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyA06tZxoVHrU6Gu6YD1nCYsTB5sGcbHPLE',
-    appId: '1:129266583956:web:20d29b8660d7f38e126781',
+    appId: '1:129266583956:web:a2bf03b0a7ec593b126781',
     messagingSenderId: '129266583956',
     projectId: 'flutter-rpg-93b5d',
     authDomain: 'flutter-rpg-93b5d.firebaseapp.com',
     storageBucket: 'flutter-rpg-93b5d.appspot.com',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyA06tZxoVHrU6Gu6YD1nCYsTB5sGcbHPLE',
+    appId: '1:129266583956:web:ddecbc421ad48149126781',
+    messagingSenderId: '129266583956',
+    projectId: 'flutter-rpg-93b5d',
+    authDomain: 'flutter-rpg-93b5d.firebaseapp.com',
+    storageBucket: 'flutter-rpg-93b5d.appspot.com',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBSzdWoLdQ6ZuwbL0eiRC3kYnGKcGE2428',
+    appId: '1:129266583956:ios:1fcfbc4491a09a0c126781',
+    messagingSenderId: '129266583956',
+    projectId: 'flutter-rpg-93b5d',
+    storageBucket: 'flutter-rpg-93b5d.appspot.com',
+    iosBundleId: 'com.example.flutterRpg',
+  );
+
 }

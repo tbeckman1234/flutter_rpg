@@ -51,7 +51,7 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
             _controller.reset();
             _controller.forward();
 
-            widget.character.toggleIsFav();
+            widget.character.toggleIsFav(); 
           }
         );
       }
