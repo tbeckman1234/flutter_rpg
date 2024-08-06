@@ -55,19 +55,17 @@ class _HomeState extends State<Home> {
                                 title: const StyledHeading('Confirm Deletion'),
                                 content: StyledText('Are you sure you want to delete $characterName?'),
                                 actions: [
-                                  Expanded(
-                                    child: Row(
-                                      children: [
-                                        StyledButton(
-                                          onPressed: () => Navigator.of(ctx).pop(true),
-                                          child: const StyledHeading('Delete'),
-                                        ),
-                                        StyledButton(
-                                          onPressed: () => Navigator.of(ctx).pop(false),
-                                          child: const StyledHeading('Cancel'),
-                                        ),
-                                      ],
-                                    ),
+                                  Row(
+                                    children: [
+                                      StyledButton(
+                                        onPressed: () => Navigator.of(ctx).pop(true),
+                                        child: const StyledHeading('Delete'),
+                                      ),
+                                      StyledButton(
+                                        onPressed: () => Navigator.of(ctx).pop(false),
+                                        child: const StyledHeading('Cancel'),
+                                      ),
+                                    ],
                                   ),
                                 ],
                                 actionsAlignment: MainAxisAlignment.center,
