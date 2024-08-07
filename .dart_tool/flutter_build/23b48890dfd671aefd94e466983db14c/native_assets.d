@@ -1,0 +1,1 @@
+ C:\\Users\\Thomas\\Dropbox\ (Personal)\\Development\\flutter-projects\\flutter_rpg\\.dart_tool\\flutter_build\\23b48890dfd671aefd94e466983db14c\\native_assets.yaml: 
