@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_rpg/screens/home/home.dart';
 import 'package:flutter_rpg/services/character_store.dart';
 import 'package:flutter_rpg/theme.dart';
@@ -29,6 +30,10 @@ class Sandbox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+    );
     return Scaffold(
       appBar: AppBar(
         flexibleSpace: const FlexibleSpaceBar(),
