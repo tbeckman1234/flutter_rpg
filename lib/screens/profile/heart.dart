@@ -55,7 +55,7 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
 
             widget.character.toggleIsFav();
             Provider.of<CharacterStore>(context, listen: false)
-                  .saveCharacter(widget.character); 
+              .saveCharacter(widget.character); 
           }
         );
       }

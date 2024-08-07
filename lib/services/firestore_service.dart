@@ -17,7 +17,8 @@ class FirestoreService {
 
     // get characters once
     static Future<QuerySnapshot<Character>> getCharactersOnce() {
-      return ref.get();
+      final sortedRef = ref.orderBy("isFav", descending: true);
+      return sortedRef.get();
     }
 
     // update a character
