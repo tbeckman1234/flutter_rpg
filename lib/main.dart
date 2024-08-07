@@ -30,10 +30,6 @@ class Sandbox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
-    );
     return Scaffold(
       appBar: AppBar(
         flexibleSpace: const FlexibleSpaceBar(),
