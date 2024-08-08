@@ -83,7 +83,7 @@ class Character with Stats {
   }
 }
 
-// dummy character data
+// dummy character data example
 
 List<Character> characters = [
   Character(id: '1', name: 'Klara', vocation: Vocation.wizard, slogan: 'Im a hairy wizard!'),

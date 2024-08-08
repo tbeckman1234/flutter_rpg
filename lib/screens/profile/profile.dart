@@ -106,7 +106,7 @@ class Profile extends StatelessWidget {
 
             // save button
             StyledButton(
-              onPressed: () {
+              onPressed: () async {
                 Provider.of<CharacterStore>(context, listen: false)
                   .saveCharacter(character);
 

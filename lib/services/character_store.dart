@@ -19,7 +19,8 @@ class CharacterStore extends ChangeNotifier {
   // save (update) character
   Future<void> saveCharacter(Character character) async {
     await FirestoreService.updateCharacter(character);
-    return;
+
+    notifyListeners();
   }
 
   // remove character
@@ -32,6 +33,7 @@ class CharacterStore extends ChangeNotifier {
 
   // initially fetch characters
   void fetchCharactersOnce () async {
+    _characters.clear();
     if (characters.length == 0) {
       final snapshot = await FirestoreService.getCharactersOnce();
 

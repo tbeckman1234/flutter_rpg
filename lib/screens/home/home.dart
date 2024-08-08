@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     Provider.of<CharacterStore>(context, listen: false)
-      .fetchCharactersOnce();
+      .fetchCharactersOnce(); 
     
     super.initState();
   }
