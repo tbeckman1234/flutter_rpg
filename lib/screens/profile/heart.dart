@@ -50,15 +50,15 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
             size: _sizeAnimation.value,
           ),
           onPressed: () {
-            _controller.reset();
-            _controller.forward();
-
             widget.character.toggleIsFav();
             Provider.of<CharacterStore>(context, listen: false)
               .saveCharacter(widget.character); 
 
             Provider.of<CharacterStore>(context, listen: false)
-              .fetchCharactersOnce(); 
+              .fetchCharactersOnce();
+
+            _controller.reset();
+            _controller.forward();
           }
         );
       }

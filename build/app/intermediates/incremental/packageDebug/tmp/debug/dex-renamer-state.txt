@@ -1,4 +1,4 @@
-#Thu Aug 08 10:51:09 MDT 2024
+#Thu Aug 08 14:45:46 MDT 2024
 base.0=C\:\\Users\\Thomas\\Dropbox (Personal)\\Development\\flutter-projects\\flutter_rpg\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Thomas\\Dropbox (Personal)\\Development\\flutter-projects\\flutter_rpg\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\Thomas\\Dropbox (Personal)\\Development\\flutter-projects\\flutter_rpg\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
