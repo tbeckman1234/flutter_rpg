@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rpg/models/character.dart';
-import 'package:flutter_rpg/services/character_store.dart';
 import 'package:flutter_rpg/theme.dart';
-import 'package:provider/provider.dart';
 
 class Heart extends StatefulWidget {
   const Heart({super.key, required this.character});
@@ -49,15 +47,8 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
             color: widget.character.isFav? AppColors.primaryAccent : Colors.grey[800],
             size: _sizeAnimation.value,
           ),
-          onPressed: () async {
+          onPressed: () {
             widget.character.toggleIsFav();
-            await Provider.of<CharacterStore>(context, listen: false)
-              .saveCharacter(widget.character); 
-              
-            if (context.mounted) {
-              Provider.of<CharacterStore>(context, listen: false)
-              .fetchCharactersOnce();
-            }
 
             _controller.reset();
             _controller.forward();
