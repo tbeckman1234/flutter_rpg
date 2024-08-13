@@ -49,16 +49,19 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
             color: widget.character.isFav? AppColors.primaryAccent : Colors.grey[800],
             size: _sizeAnimation.value,
           ),
-          onPressed: () {
+          onPressed: () async {
             widget.character.toggleIsFav();
-            Provider.of<CharacterStore>(context, listen: false)
+            await Provider.of<CharacterStore>(context, listen: false)
               .saveCharacter(widget.character); 
-
-            Provider.of<CharacterStore>(context, listen: false)
+              
+            if (context.mounted) {
+              Provider.of<CharacterStore>(context, listen: false)
               .fetchCharactersOnce();
+            }
 
             _controller.reset();
             _controller.forward();
+
           }
         );
       }
